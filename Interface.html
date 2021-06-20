@@ -1,0 +1,127 @@
+
+                         <!---------------------- HTML ---------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Motor's Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <form action="SaveRunCode.php" method="post">
+      <img src="logo.png" width="150" align="left" >
+          
+      <div  class="BackGround" style="height:795px; width:760px; ">
+    <div class="title">Motor's Control Panel</div>
+          
+          
+                           <!---------------------- Slider 1 ---------------------->
+      <div  class="BackGround2" style="height:90px; width:300px; top: 185px;">
+          <div class="sliderName" style="top: 30px; "><p>Motor 1:</p></div>
+    <div class="range" >
+<div class="field">
+          <div class="value left"> 0</div>
+<input type="range" min="0" max="180" value="0" onchange="show_value1(this.value)" name="motor1" >
+    <span id="slider_value1" style="padding: 4px; font-size: 5px; font-weight: bold; ">0</span>
+          <div class="value right"> 180</div>
+</div>  
+</div>    
+      </div>
+          
+                           <!---------------------- Slider 2 ---------------------->
+      <div  class="BackGround2" style="height:90px; width:300px; top: 285px;">
+          <div class="sliderName" style="top: 30px;"><p>Motor 2:</p></div>
+    <div class="range" >
+<div class="field">
+          <div class="value left"> 0</div>
+<input type="range" min="0" max="180" value="0" onchange="show_value2(this.value)" name="motor2">
+    <span id="slider_value2" style="padding: 4px; font-size: 5px; font-weight: bold; ">0</span>
+          <div class="value right"> 180</div>
+</div>
+</div> 
+      </div>
+          
+                           <!---------------------- Slider 3 ---------------------->
+                <div  class="BackGround2" style="height:90px; width:300px; top: 385px;">
+                    <div class="sliderName" style="top: 30px;"><p>Motor 3:</p></div>
+    <div class="range" >
+<div class="field">
+          <div class="value left"> 0</div>
+<input type="range" min="0" max="180" value="0" onchange="show_value3(this.value)" name="motor3" >
+    <span id="slider_value3" style="padding: 4px; font-size: 5px; font-weight: bold; ">0</span>
+          <div class="value right"> 180</div>
+</div>
+</div>  
+      </div>
+          
+                           <!---------------------- Slider 4 ---------------------->
+                      <div  class="BackGround2" style="height:90px; width:300px; top: 485px;">
+                          <div class="sliderName" style="top: 30px;"><p>Motor 4:</p></div>
+    <div class="range" >
+<div class="field">
+          <div class="value left"> 0</div>
+<input type="range" min="0" max="180" value="0" onchange="show_value4(this.value)" name="motor4" >
+    <span id="slider_value4" style="padding: 4px; font-size: 5px; font-weight: bold; ">0</span>
+          <div class="value right"> 180</div>
+</div>
+</div>  
+      </div>
+          
+                           <!---------------------- Slider 5 ---------------------->
+                      <div  class="BackGround2" style="height:90px; width:300px; top: 585px;">
+                          <div class="sliderName" style="top: 30px;"><p>Motor 5:</p></div>
+    <div class="range" >
+<div class="field">
+          <div class="value left"> 0</div>
+<input type="range" min="0" max="180" value="0" onchange="show_value5(this.value)" name="motor5" >
+    <span id="slider_value5" style="padding: 4px; font-size: 5px; font-weight: bold; ">0</span>
+          <div class="value right"> 180</div>
+</div>
+</div>  
+      </div>
+          
+                           <!---------------------- Slider 6 ---------------------->
+                      <div  class="BackGround2" style="height:90px; width:300px; top: 685px;">
+                          <div class="sliderName" style="top: 30px;"><p>Motor 6:</p></div>
+    <div class="range" >
+<div class="field">
+          <div class="value left"> 0</div>
+<input type="range" min="0" max="180" value="0" onchange="show_value6(this.value)" name="motor6" >
+    <span id="slider_value6" style="padding: 4px; font-size: 5px; font-weight: bold; ">0</span>
+          <div class="value right"> 180</div>
+</div>
+</div>  
+      </div>
+      </div>
+                           <!---------------------- Buttons ---------------------->
+      <button class="btn" style ="top:715px; left:495px; font-size: 17px; " name="run" >Run</button>
+    <button class="btn" style ="top:715px; left:640px; font-size: 17px; " name="save" >Save</button>
+          
+     </form> 
+ </body>
+</html>
+
+                           <!---------------------- Java Script Code ---------------------->      
+<script> 
+   
+function show_value1(x)
+{ document.getElementById("slider_value1").innerHTML=x; }
+            
+function show_value2(x)
+{ document.getElementById("slider_value2").innerHTML=x; } 
+            
+function show_value3(x)
+{ document.getElementById("slider_value3").innerHTML=x; } 
+            
+function show_value4(x)
+{ document.getElementById("slider_value4").innerHTML=x; } 
+            
+function show_value5(x)
+{ document.getElementById("slider_value5").innerHTML=x; } 
+            
+function show_value6(x)
+{ document.getElementById("slider_value6").innerHTML=x; }
+            
+   </script>
+
+ 

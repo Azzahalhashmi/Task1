@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+html,body{
+  display: grid;
+  height: 100%;
+  background: #73adb9; }
+
+img{
+  padding-top: 10px;
+  padding-left: 10px;}
+
+.BackGround{
+     position:absolute; 
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+     max-width: 1300px;
+     padding: 10px;
+     background:#9dc6ce; }
+
+.title{
+    position:absolute;
+    font-weight: bold;
+    top:6%;
+    left:26%;
+    color:#9b506e;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:5px; }
+
+.sliderName{
+  position:absolute;
+  left:-50%;
+  font-size:18px;
+  font-weight:600;
+  padding-left:20px;
+  color:#9b506e;   }
+
+.BackGround2{
+     position:absolute; 
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+     max-width: 550px;
+     padding: 10px;
+     border-radius: 9px;
+     background: rgba(0,0,0,0.2); }
+
+.range{ 
+  height: 70px;
+  width: 280px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 0 65px 0 45px;
+  text-align: center; }
+
+.field{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative; }
+
+.field .value{
+  position: absolute;
+  font-size: 15px;
+  color: #82244a;
+  font-weight: 600; }
+
+.field .value.left{
+  left: -22px; }
+.field .value.right{
+  right: -43px; }
+
+.range input{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  top: 100px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  z-index: 2222; }
+
+.range input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #b3225c;
+  border: 1px solid #b3225c;
+  cursor: pointer; }
+
+.range input::-moz-range-thumb{
+  -webkit-appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #b3225c;
+  border: 1px solid #b3225c; }
+
+.btn {
+   width:120px;
+   height:40px;
+   position:absolute;;
+   border:0.16em solid #b3225c;
+   border-radius: 18px;
+    padding-top: 7px;
+   color:white;
+   text-align: center;
+   background:#b3225c; }
+
+.btn:hover{
+   color:#b3225c;
+   background:white; }
+
